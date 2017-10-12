@@ -34,7 +34,3 @@ export class HeroDetailComponent implements OnInit {
   }
 
 }
-
-// export class HeroDetailComponent {
-//   @Input() hero: Hero;
-// }
