@@ -1,8 +1,19 @@
 <h1>{{title}}</h1>
-<nav>
+<h1 class="mat-display-1">Jackdaws love my big sphinx of quartz.</h1>
+<h2 class="mat-h2">The quick brown fox jumps over the lazy dog.</h2>
+<nav class="mat-typography">
     <ul>
         <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
         <li><a routerLink="/heroes" routerLinkActive="active">Heroes</a></li>
     </ul>
 </nav>
-<router-outlet></router-outlet>
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item> Settings </button>
+    <button mat-menu-item> Help </button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+</button>
+
+<router-outlet class="mat-typography"></router-outlet>
